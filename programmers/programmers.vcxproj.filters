@@ -16,6 +16,12 @@
     <Filter Include="소스 파일\StackAndQueue">
       <UniqueIdentifier>{a5f6173f-02ee-4f0c-b5df-c32f9bbe2f90}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\BruteForce">
+      <UniqueIdentifier>{9b894bdf-8e2d-43aa-907f-75871d34d615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\BFS">
+      <UniqueIdentifier>{39094c7a-262b-449b-a233-00c60c5fd7ee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="다리를지나가는트럭.cpp">
@@ -26,6 +32,9 @@
     </ClCompile>
     <ClCompile Include="124나라의숫자.cpp">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="게임맵최단거리.cpp">
+      <Filter>소스 파일\BFS</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
