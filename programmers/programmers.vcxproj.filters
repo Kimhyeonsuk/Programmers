@@ -21,5 +21,11 @@
     <ClCompile Include="다리를지나가는트럭.cpp">
       <Filter>소스 파일\StackAndQueue</Filter>
     </ClCompile>
+    <ClCompile Include="프린터.cpp">
+      <Filter>소스 파일\StackAndQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="124나라의숫자.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
