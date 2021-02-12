@@ -22,6 +22,9 @@
     <Filter Include="소스 파일\BFS">
       <UniqueIdentifier>{39094c7a-262b-449b-a233-00c60c5fd7ee}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Kakao">
+      <UniqueIdentifier>{d4bd0d06-8116-4b90-a798-b3414b763255}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="다리를지나가는트럭.cpp">
@@ -38,6 +41,9 @@
     </ClCompile>
     <ClCompile Include="두수뽑아서더하기.cpp">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="크레인인형뽑기게임.cpp">
+      <Filter>소스 파일\Kakao</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
