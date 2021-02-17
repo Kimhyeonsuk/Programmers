@@ -45,5 +45,11 @@
     <ClCompile Include="크레인인형뽑기게임.cpp">
       <Filter>소스 파일\Kakao</Filter>
     </ClCompile>
+    <ClCompile Include="멀쩡한사각형.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="합승택시요금.cpp">
+      <Filter>소스 파일\Kakao</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
