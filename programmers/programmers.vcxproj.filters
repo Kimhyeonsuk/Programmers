@@ -51,5 +51,8 @@
     <ClCompile Include="합승택시요금.cpp">
       <Filter>소스 파일\Kakao</Filter>
     </ClCompile>
+    <ClCompile Include="광고삽입.cpp">
+      <Filter>소스 파일\Kakao</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
