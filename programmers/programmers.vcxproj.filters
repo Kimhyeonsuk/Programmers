@@ -54,5 +54,17 @@
     <ClCompile Include="광고삽입.cpp">
       <Filter>소스 파일\Kakao</Filter>
     </ClCompile>
+    <ClCompile Include="카드짝맞추기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="자물쇠와열쇠.cpp">
+      <Filter>소스 파일\Kakao</Filter>
+    </ClCompile>
+    <ClCompile Include="문자열압축.cpp">
+      <Filter>소스 파일\Kakao</Filter>
+    </ClCompile>
+    <ClCompile Include="N으로표현.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
