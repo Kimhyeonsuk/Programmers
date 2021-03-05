@@ -66,5 +66,11 @@
     <ClCompile Include="N으로표현.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="추석트래픽.cpp">
+      <Filter>소스 파일\Kakao</Filter>
+    </ClCompile>
+    <ClCompile Include="카카오프렌즈컬러링북.cpp">
+      <Filter>소스 파일\Kakao</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
