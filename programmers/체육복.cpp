@@ -2,48 +2,33 @@
 #include <vector>
 #include <algorithm>
 #include <iostream>
+#include <map>
 using namespace std;
-bool comp(pair<int, pair<int, bool>>a, pair<int, pair<int, bool>>b) {
-    return a.first < b.first;
-}
 int solution(int n, vector<int> lost, vector<int> reserve) {
-    int answer = 0;
-    vector < pair<int, pair<int, bool>>>allStudent;
+    int answer = n - lost.size();
+    vector<int>allStudent(n + 2, 0);
     for (int i = 0; i < lost.size(); i++) {
-        allStudent.push_back({lost[i], { i,false }});
+        allStudent[lost[i]] += -1;
     }
     for (int i = 0; i < reserve.size(); i++) {
-        allStudent.push_back({ reserve[i],{i,true} });
+        allStudent[reserve[i]] += 1;
+        if (allStudent[reserve[i]] == 0)
+            answer++;
     }
-
-    sort(allStudent.begin(), allStudent.end(), comp);
-
-    answer = reserve.size();
-    int i = 0;
-    while(i<allStudent.size()){
     
-        if (allStudent[i].second.second == false) {
-            if (i != 0 && (i != allStudent.size() - 1) && allStudent[i + 1].second.second) {
-                allStudent[i + 1].second.second = false;
+    for (int i = 1; i <= n; i++) {
+        if (allStudent[i]>= 1) {
+            if (allStudent[i - 1] == -1) {
+                allStudent[i] = 0;
+                allStudent[i - 1] = 0;
                 answer++;
-                i += 2;
             }
-            else if (i != 0 && (i != allStudent.size() - 1) && allStudent[i -1].second.second) {
-                allStudent[i - 1].second.second = false;
+            else if (allStudent[i + 1] == -1) {
+                allStudent[i] = 0;
+                allStudent[i + 1] = 0;
                 answer++;
-                i++;
-            }
-            else if (i == 0 && allStudent[i + 1].second.second) {
-                allStudent[i + 1].second.second = false;
-                answer++;
-                i += 2;
-            }
-            else if (i == allStudent.size() - 1 && allStudent[i - 1].second.second) {
-                answer++;
-                i++;
             }
         }
-        i++;
     }
     return answer;
 }
